@@ -24,3 +24,4 @@ Réponse b
 #### Langage utilisé 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Go_Logo_Aqua.svg/1200px-Go_Logo_Aqua.svg.png)
 
+export GOPATH=$(pwd)
