@@ -2,6 +2,10 @@
 
 ### Step01 - Proxy
 
+`sysguard --origin=http://127.0.0.1:80 --listen=http://0.0.0.0:8080`  
+`sysguard --origin=http://whiteagent.fr:80 --listen=http://0.0.0.0:80`
+`export SYSPROXY=http://0.0.0.0:80 & export SYSGATEWAY=http://127.0.0.1:8080 & sysguard`
+
 - Permet d'étabilr un pont entre le serveur web et le client. Il est possible d'établir le pont à partir d'un serveur web en local, ou alors d'une autre adresse IP (WAF stocké sur une autre machine)
 - Doit pouvoir logger toute les requêtes
 - Doit supporter le HTTP et le HTTPS en gérant les certificats 
