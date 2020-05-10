@@ -1,5 +1,9 @@
 # SysGuard
 
+### Pre-requisites
+
+Fetch the certificate and update the path in the file `./src/sysguard/certs.json`.
+
 ### Step01 - Proxy
 
 `sysguard --origin=http://127.0.0.1:80 --listen=http://0.0.0.0:8080`  

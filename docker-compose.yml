@@ -1,0 +1,26 @@
+version: "3.7"
+services: 
+
+  srv-web:
+    image: nginx:1.18.0-alpine
+    restart: always
+    expose:
+      - "80"
+    networks: 
+      - sysguard
+
+  sysguard:
+    build:
+      context: "./sysguard"
+    depends_on: 
+      - srv-web
+    restart: always
+    env_file: .env
+    ports:
+      - "8080:80"
+#      - "443:443" #You will have to uncomment this line when the service will be deployed online and you will have certificates
+    networks: 
+      - sysguard
+
+networks:
+  sysguard:
