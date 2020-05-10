@@ -1,0 +1,11 @@
+{
+    "certs": [
+        {
+            "certfile" : "/path/to",
+            "keyfile" : "/path/to"
+        },{
+            "certfile": "/path/to",
+            "keyfile" : "/path/to"
+        }
+    ]
+}
